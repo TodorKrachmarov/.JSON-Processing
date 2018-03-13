@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E57A3981-8790-4E26-88C4-58D62CA143F9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_02.Car_Dealer</RootNamespace>
+    <AssemblyName>02.Car-Dealer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="02.Car-Dealer.cs" />
+    <Compile Include="Data\CarDealerContext.cs" />
+    <Compile Include="Migrations\201703252127472_InitialCreate.cs" />
+    <Compile Include="Migrations\201703252127472_InitialCreate.Designer.cs">
+      <DependentUpon>201703252127472_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703252258193_ChangeTravelDistanceFromIntToDecimal.cs" />
+    <Compile Include="Migrations\201703252258193_ChangeTravelDistanceFromIntToDecimal.Designer.cs">
+      <DependentUpon>201703252258193_ChangeTravelDistanceFromIntToDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703252302182_ChangeTravelDistanceToUlong.cs" />
+    <Compile Include="Migrations\201703252302182_ChangeTravelDistanceToUlong.Designer.cs">
+      <DependentUpon>201703252302182_ChangeTravelDistanceToUlong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703252313509_ChangeTravellDistanceToString.cs" />
+    <Compile Include="Migrations\201703252313509_ChangeTravellDistanceToString.Designer.cs">
+      <DependentUpon>201703252313509_ChangeTravellDistanceToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703252316584_changeDataOfBirthToString.cs" />
+    <Compile Include="Migrations\201703252316584_changeDataOfBirthToString.Designer.cs">
+      <DependentUpon>201703252316584_changeDataOfBirthToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703252358244_ChangeBirtDateToDateTime.cs" />
+    <Compile Include="Migrations\201703252358244_ChangeBirtDateToDateTime.Designer.cs">
+      <DependentUpon>201703252358244_ChangeBirtDateToDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703260000268_ChangeDateBirthToDateTime2.cs" />
+    <Compile Include="Migrations\201703260000268_ChangeDateBirthToDateTime2.Designer.cs">
+      <DependentUpon>201703260000268_ChangeDateBirthToDateTime2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703260004330_ChangeTravelledDistanceToLong.cs" />
+    <Compile Include="Migrations\201703260004330_ChangeTravelledDistanceToLong.Designer.cs">
+      <DependentUpon>201703260004330_ChangeTravelledDistanceToLong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703271612462_BirthDateMadeRequire.cs" />
+    <Compile Include="Migrations\201703271612462_BirthDateMadeRequire.Designer.cs">
+      <DependentUpon>201703271612462_BirthDateMadeRequire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703271616490_ChangeDateOFBirthToBirthDate.cs" />
+    <Compile Include="Migrations\201703271616490_ChangeDateOFBirthToBirthDate.Designer.cs">
+      <DependentUpon>201703271616490_ChangeDateOFBirthToBirthDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703271640592_ChangeIsImportedToIsImporter.cs" />
+    <Compile Include="Migrations\201703271640592_ChangeIsImportedToIsImporter.Designer.cs">
+      <DependentUpon>201703271640592_ChangeIsImportedToIsImporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703271749375_ChangeDiscountToDecimal.cs" />
+    <Compile Include="Migrations\201703271749375_ChangeDiscountToDecimal.Designer.cs">
+      <DependentUpon>201703271749375_ChangeDiscountToDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Part.cs" />
+    <Compile Include="Models\Sale.cs" />
+    <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Import\cars.json" />
+    <None Include="Import\customers.json" />
+    <None Include="Import\parts.json" />
+    <None Include="Import\suppliers.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201703252127472_InitialCreate.resx">
+      <DependentUpon>201703252127472_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703252258193_ChangeTravelDistanceFromIntToDecimal.resx">
+      <DependentUpon>201703252258193_ChangeTravelDistanceFromIntToDecimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703252302182_ChangeTravelDistanceToUlong.resx">
+      <DependentUpon>201703252302182_ChangeTravelDistanceToUlong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703252313509_ChangeTravellDistanceToString.resx">
+      <DependentUpon>201703252313509_ChangeTravellDistanceToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703252316584_changeDataOfBirthToString.resx">
+      <DependentUpon>201703252316584_changeDataOfBirthToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703252358244_ChangeBirtDateToDateTime.resx">
+      <DependentUpon>201703252358244_ChangeBirtDateToDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703260000268_ChangeDateBirthToDateTime2.resx">
+      <DependentUpon>201703260000268_ChangeDateBirthToDateTime2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703260004330_ChangeTravelledDistanceToLong.resx">
+      <DependentUpon>201703260004330_ChangeTravelledDistanceToLong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703271612462_BirthDateMadeRequire.resx">
+      <DependentUpon>201703271612462_BirthDateMadeRequire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703271616490_ChangeDateOFBirthToBirthDate.resx">
+      <DependentUpon>201703271616490_ChangeDateOFBirthToBirthDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703271640592_ChangeIsImportedToIsImporter.resx">
+      <DependentUpon>201703271640592_ChangeIsImportedToIsImporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703271749375_ChangeDiscountToDecimal.resx">
+      <DependentUpon>201703271749375_ChangeDiscountToDecimal.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
